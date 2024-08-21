@@ -1,9 +1,21 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
     background-color: #000000;
     color: #333;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 #background-video {
@@ -15,7 +27,7 @@ body {
     width: auto;
     height: auto;
     z-index: -1;
-    transform: translate(-50%, -50%) scale(0.35);
+    transform: translate(-50%, -50%) scale(1);
     object-fit: contain;
 }
 
@@ -53,7 +65,7 @@ nav ul li a {
 section {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.5);
 }
